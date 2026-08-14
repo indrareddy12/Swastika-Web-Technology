@@ -1,0 +1,41 @@
+# Virtual Environment
+venv/
+.venv/
+ENV/
+
+# Python caching & bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Node dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# Local/Secret Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env
+frontend/.env.local
+
+# Editor & OS configuration
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

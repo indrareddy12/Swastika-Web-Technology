@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --color-brand-50: #f5f7ff;
+  --color-brand-100: #ebf0ff;
+  --color-brand-200: #d6e0ff;
+  --color-brand-300: #adc2ff;
+  --color-brand-400: #85a4ff;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+  
+  --font-sans: 'Inter', sans-serif;
+  
+  --shadow-glow-brand: 0 0 15px rgba(59, 130, 246, 0.35);
+  --shadow-glow-success: 0 0 15px rgba(34, 197, 94, 0.35);
+  --shadow-glow-warning: 0 0 15px rgba(234, 179, 8, 0.35);
+  --shadow-glow-danger: 0 0 15px rgba(239, 68, 68, 0.35);
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-slate-800 bg-[#f8fafc] transition-colors duration-200 dark:text-slate-100 dark:bg-[#0b0f19];
+  }
+}
+
+/* Custom design system components */
+@layer components {
+  .glass-panel {
+    @apply bg-white/80 dark:bg-slate-900/70 border border-slate-200/40 dark:border-slate-800/50 shadow-sm backdrop-blur-md;
+  }
+  
+  .glass-card {
+    @apply bg-white/95 dark:bg-slate-900/80 border border-slate-200/50 dark:border-slate-800/60 shadow-sm dark:shadow-slate-950/30 rounded-2xl backdrop-blur-md transition-all duration-200 hover:shadow-md hover:border-slate-300 dark:hover:border-slate-700/60;
+  }
+}
+
+/* Custom premium input class helpers */
+input, select, textarea {
+  @apply bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 transition-all duration-150;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300/80 dark:bg-slate-800/80 rounded-full hover:bg-slate-400 dark:hover:bg-slate-700;
+}
+
+/* Micro-animations and custom effects */
+.hover-scale {
+  @apply transition-transform duration-200 active:scale-95;
+}
