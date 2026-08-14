@@ -27,19 +27,19 @@ async def seed_data():
         
         # Seed users
         admin = User(
-            name="Poonam Thakur",
+            name="Admin User",
             email="admin@webvory.com",
             password_hash=get_password_hash("admin123"),
             role="admin"
         )
         member1 = User(
-            name="Indra Bathini",
+            name="Standard Member A",
             email="member@webvory.com",
             password_hash=get_password_hash("member123"),
             role="member"
         )
         member2 = User(
-            name="Pallav Burnwal",
+            name="Standard Member B",
             email="pallav@webvory.com",
             password_hash=get_password_hash("member123"),
             role="member"

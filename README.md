@@ -136,9 +136,9 @@ To help evaluate the portal immediately, the database is auto-seeded with the fo
 
 | Role | Email | Password | Name |
 | :--- | :--- | :--- | :--- |
-| **Admin** | `admin@webvory.com` | `admin123` | Poonam Thakur |
-| **Member** | `member@webvory.com` | `member123` | Indra Bathini |
-| **Member** | `member@webvory.com` | `member123` | Pallav Burnwal |
+| **Admin** | `admin@webvory.com` | `admin123` | Admin User |
+| **Member** | `member@webvory.com` | `member123` | Standard Member A |
+| **Member** | `pallav@webvory.com` | `member123` | Standard Member B |
 
 ---
 
